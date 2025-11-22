@@ -1,0 +1,234 @@
+[
+  {
+    "intent": "offline raided",
+    "regex": [
+      "is.*my.*claim.*safe.*during.*jh\\?",
+      "offline.*raided",
+      "attacked.*offline",
+      "my.*city.*was.*destroyed.*while.*i.*was.*offline",
+      "my.*city.*was.*destroyed.*while.*i.*was.*asleep",
+      "i.*cant.*sleep.*during.*jh",
+      "i.*cant.*sleep.*during.*judgment.*hour",
+      "i.*can't.*sleep.*during.*jh",
+      "i.*can't.*sleep.*during.*judgment.*hour",
+      "i.*got.*offlined"
+    ],
+    "responses": [
+      {"text": "JH is set by the server; however, if the offline protection mod is installed on the server, as long as people in your guild do not log in, your claim should be safe.", "image": null},
+      {"text": "If you are offline, enemy players cannot harm your claim.", "image": null}
+    ]
+  },
+  {
+    "intent": "where is the gm",
+    "regex": [
+      "where.*is.*the.*gm",
+      "how.*to.*contact.*gm",
+      "where.*is.*the.*admin",
+      "how.*to.*contact.*admin",
+      "admin.*contact.*info"
+    ],
+    "responses": [
+      {"text": "For GM assistance, please create a ticket.", "image": null},
+      {"text": "You can reach a GM by submitting a ticket.", "image": null}
+    ]
+  },
+  {
+    "intent": "when is jh",
+    "regex": [
+      "when.*is.*jh",
+      "what.*is.*the.*time.*for.*jh",
+      "jh.*schedule"
+    ],
+    "responses": [
+      {"text": "Check the https://livemap.feudal.tools/?livemap_id=11796 for the Judgement hour time.", "image": null},
+      {"text": "Did you check https://livemap.feudal.tools/?livemap_id=11796 ?", "image": null}
+    ]
+  },
+  {
+    "intent": "tradepost stole my money",
+    "regex": [
+      "tradepost.*stole.*my.*money",
+      "tradepost.*took.*my.*money",
+      "tradepost.*scammed.*me",
+      "tradepost.*stole.*my.*coins",
+      "tradepost.*isn't.*working"
+    ],
+    "responses": [
+      {"text": "For GM assistance, please create a ticket.", "image": null},
+      {"text": "GMs are available via ticket; please submit your request.", "image": null}
+    ]
+  },
+  {
+    "intent": "i need help from gm",
+    "regex": [
+      "i.*need.*help.*from.*gm",
+      "gm.*help.*needed",
+      "i.*want.*to.*contact.*gm"
+    ],
+    "responses": [
+      {"text": "Please create a ticket to get assistance from a GM.", "image": null},
+      {"text": "Open a ticket to receive GM help.", "image": null},
+      {"text": "For help from a GM, submit a support ticket.", "image": null}
+    ]
+  },
+  {
+    "intent": "i need a gm",
+    "regex": [
+      "i.*need.*a.*gm",
+      "gm.*needed",
+      "i.*want.*to.*speak.*to.*gm"
+    ],
+    "responses": [
+      {"text": "Please create a ticket to get assistance from a GM.", "image": null},
+      {"text": "Open a ticket to receive GM help.", "image": null},
+      {"text": "For help from a GM, submit a support ticket.", "image": null}
+    ]
+  },
+  {
+    "intent": "how to play",
+    "regex": [
+      "how.*to.*play",
+      "tell.*me.*how.*to.*play",
+      "how.*do.*i.*play"
+    ],
+    "responses": [
+      {"text": "Check the official game guide here: [https://lifeisfeudal.fandom.com/wiki/Life_is_Feudal_Wiki].", "image": null},
+      {"text": "For instructions on how to play, please refer to the game guide: [https://lifeisfeudal.fandom.com/wiki/Life_is_Feudal_Wiki].", "image": null},
+      {"text": "You can find the official game guide at: [https://lifeisfeudal.fandom.com/wiki/Life_is_Feudal_Wiki].", "image": null}
+    ]
+  },
+  {
+    "intent": "tell me a joke",
+    "regex": [
+      "tell.*me.*a.*joke",
+      "give.*me.*a.*joke",
+      "make.*me.*laugh"
+    ],
+    "responses": [
+      {"text": "What do kids play when their mom is using the phone? Bored games! 😂", "image": null},
+      {"text": "I have seen your kill stats https://newlands.lifeisfeudal.co.uk/index.php?pages=leaderboard ! 😂", "image": null},
+      {"text": "What’s the smartest insect? A spelling bee! 🐝", "image": null},
+      {"text": "How does the ocean say hi? It waves! 🌊", "image": null},
+      {"text": "What has ears but cannot hear? A cornfield! 🌽", "image": null},
+      {"text": "What’s a cat’s favorite dessert? A bowl full of mice-cream! 🍦", "image": null},
+      {"text": "What did the policeman say to his hungry stomach? “Freeze. You’re under a vest!” 🚔", "image": null},
+      {"text": "What did the lava say to his girlfriend? “I lava you!” ❤️", "image": null}
+    ]
+  },
+  {
+    "intent": "god is preventing you from claiming these lands",
+    "regex": [
+      "god.*is.*preventing.*you.*from.*claiming.*these.*lands",
+      "god.*prevents.*you.*from.*claiming.*these.*lands",
+      "you.*cannot.*claim.*these.*lands.*god",
+      "claim.*blocked.*by.*god"
+    ],
+    "responses": [
+      {"text": "This happens due to you trying to build too close to another claim or the water at the edge of map.", "image": null},
+      {"text": "Try using the livemap planner to ensure you are not trying to build your monument too close to another claim.", "image": null}
+    ]
+  },
+  {
+    "intent": "base raided by climbing players",
+    "regex": [
+      "players.*entered.*our.*base",
+      "players.*climbing.*walls.*attack",
+      "climb.*up.*mountain.*into.*base",
+      "attacking.*us.*as.*nakeds",
+      "entered.*base.*kill",
+      "invaders.*climbing.*structure",
+      "enemy.*players.*jump.*into.*base",
+      "climbing.*stairs.*into.*base",
+      "climbing.*tables.*attack",
+      "entered.*base.*outside.*judgment.*hour",
+      "killing.*us.*outside.*jh",
+      "players.*using.*terrain.*to.*enter.*base"
+    ],
+    "responses": [
+      {"text": "This is perfectly fine. Players are allowed to jump into claims and attack outside of Judgment Hour as long as they use stairs, tables, or other legal structures to gain entry.", "image": "https://lifeisfeudal.com/static/images/screenshots/04.jpg"},
+      {"text": "No cheating is involved if they used legitimate structures like stairs or tables to enter your base. Outside of Judgment Hour, PvP is allowed.", "image": "https://cdnb.artstation.com/p/assets/images/images/010/282/525/large/marina-krivenko-lif-promo666.jpg?1547589112"},
+      {"text": "As long as players gain access via buildable structures (tables, stairs), killing outside of Judgment Hour is valid gameplay.", "image": "https://www.sector.sk/files/recenzie/20246215117467/life-is-feudal-39386-5992395-7.jpg"}
+    ]
+  },
+  {
+    "intent": "buildings cannot be destroyed outside JH",
+    "regex": [
+      "buildings.*outside.*jh",
+      "cannot.*destroy.*buildings",
+      "destroy.*outside.*jh",
+      "outside.*jh.*safe",
+      "structures.*outside.*jh",
+      "base.*outside.*jh",
+      "buildings.*protected",
+      "buildings.*safe",
+      "tent.*destroy.*outside.*jh",
+      "destroy.*tent.*outside.*jh"
+    ],
+    "responses": [
+      {"text": "You are right, but we have an exception here: tents can be destroyed outside of Judgment Hour.", "image": null},
+      {"text": "Indeed, most structures are protected outside JH, but tents and similar objects can still be destroyed.", "image": null}
+    ]
+  },
+  {
+    "intent": "my modpack not working",
+    "regex": [
+      "modpack.*not.*working",
+      "my.*modpack.*not.*working",
+      "modpack.*broke",
+      "my.*modpack.*is.*broken",
+      "modpack.*won't.*work",
+      "modpack.*not.*loading",
+      "can't.*get.*modpack.*to.*work",
+      "modpack.*failed.*to.*install",
+      "modpack.*won't.*install",
+      "can't.*install.*modpack",
+      "cannot.*install.*modpack",
+      "corrupt.*modpack",
+      "my.*game.*crashed",
+      "game.*crash(ed)?",
+      "game.*broken",
+      "game.*not.*working",
+      "game.*freezing",
+      "game.*stuck",
+      "having.*issues.*with.*game",
+      "mods?.*crash",
+      "mods?.*cause.*crash",
+      "it.*still.*crashes",
+      "crashes.*while.*joining",
+      "mods.*broken",
+      "mods.*suck",
+      "modpack.*didn't.*install",
+      "modpack.*did not install",
+      "steam.*not.*logged.*in",
+      "playing.*game.*while.*installing.*modpack",
+      "yo launcher.*not working",
+      "yo launcher.*install.*mods",
+      "modpack.*issues",
+      "modpack.*problem",
+      "modpack.*corrupt",
+      "modpack.*fails.*to.*load",
+      "game.*fails.*to.*start.*with.*modpack",
+      "modpack.*error",
+      "modpack.*doesn't.*work",
+      "modpack.*won't.*launch",
+      "modpack.*doesn't.*load",
+      "my.*mods.*aren't.*working",
+      "modpack.*crashes",
+      "modpack.*force.*close",
+      "modpack.*hangs",
+      "modpack.*freeze",
+      "modpack.*stops.*loading",
+      "can't.*start.*game.*with.*modpack",
+      "unable.*to.*launch.*modpack",
+      "yo launcher.*crash",
+      "yo launcher.*fails",
+      "yo launcher.*not.*opening",
+      "yo launcher.*stuck"
+    ],
+    "responses": [
+      {"text": "Did you try this? [https://lifxmod.com/troubleshooting/using-yo-launcher-my-modpack-did-not-install-correctly.html]", "image": "https://lifxmod.com/uploads/yolauncheruninstall.png"},
+      {"text": "If you've joined another server using basil mod, you may need to reinstall via yo launcher.", "image": "https://lifxmod.com/uploads/yolauncheruninstall.png"},
+      {"text": "Check out this guide: [https://lifxmod.com/troubleshooting/mod-pack-will-not-download-and-install-using-yo-launcher.html] for help.", "image": "https://lifxmod.com/uploads/yolauncheruninstall.png"}
+    ]
+  }
+]

@@ -1,0 +1,89 @@
+{
+  "bot_token": "Put your Discord bot token here",
+  "presence": {
+    "enabled": true,
+    "update_enabled": true
+  },
+  "webhooks": {
+    "server_information": {
+      "channel_id": "Put your Discord channel id here",
+      "enabled": true,
+      "update_enabled": true,
+      "update_interval": "40",  
+      "thumbnail_image": "https://i.pinimg.com/originals/f1/01/ef/f101ef96110a9ec9dd0a7fa86c78514e.jpg" 
+    },
+    "server_status": {
+      "channel_id": "Put your Discord channel id here",
+      "enabled": false,
+      "update_enabled": false,
+      "update_interval": "40",  
+      "server_online_image": "https://cdn.vectorstock.com/i/1000v/02/84/digital-online-concept-background-vector-1010284.jpg",
+      "server_offline_image": "https://i.ibb.co/D4QypWw/dbe4cro-d86d9508-a025-4e38-83f7-a867eedffff2.gif"     
+    },
+    "server_rules": {
+      "channel_id": "Put your Discord channel id here",
+      "enabled": false,
+      "update_enabled": false,
+      "update_interval": "40",  
+      "rules_image": "https://www.thefinalstep.co.uk/hs-fs/hubfs/istock-know-the-rules.jpg?width=1840&height=1104&name=istock-know-the-rules.jpg"    
+    },
+    "killboard": {
+      "channel_id": "Put your Discord channel id here",
+      "enabled": false,
+      "update_enabled": false,
+      "update_interval": "40",
+      "killboard_image": "https://images.mein-mmo.de/magazin/medien/2016/12/life-is-feudal-battle.jpg"
+  	},
+      "guildwealth": {
+      "channel_id": "Put your Discord channel id here",
+      "enabled": false,
+      "update_enabled": false,
+      "interval": "60",
+      "wealth_image": "https://cdn.cloudflare.steamstatic.com/steam/apps/290080/ss_70c55cfec37f1e4d1fb67d628d16224d29bd385d.1920x1080.jpg"
+    }  
+  },    
+  "database": {
+    "database_address": "Put your server ip here",
+    "database_port": "Put your server db port here Default: 3306",
+    "database_name": "Put your server db name here",
+    "database_user": "Put your server db username here",
+    "database_password": "Put your server db password here"   
+  },
+  "server_name": "Put your servername here",
+  "server_ip": "Put your server ip here",
+  "server_port": "Put your server port here",
+  "query_port": "Put your query port here",
+  "update_interval": 30,
+  "last_wipe": "21/10/25",
+  "next_wipe": "No planned wipe!",
+  "map_name": "Put your servername here",
+  "map_image": "Put your server map image link here",
+  "livemap": "Put your livemap link here",
+  "status_icon": "https://icon-library.com/images/status-icon-png/status-icon-png-14.jpg",
+  "pop_message": "{players} / {maxplayers}",
+  "pop_queue_message": "{players} / {maxplayers} ({queue})",
+  "pop_joining_message": "{players} / {maxplayers} ({joining} Joining)",
+  "pop_queue_joining_message": "{players} / {maxplayers} | {queue} in Queue | {joining} Joining",
+  "connecting_message": "Offline!",
+  "conditionals": {
+    "players": [
+      {"min": 0, "max": 0, "message": "Server is empty"},
+      {"min": 1, "max": 10, "message": "just chillen"},
+      {"min": 11, "max": 29, "message": "relaxing"},
+      {"min": 30, "max": 50, "message": "getting busy"},
+      {"min": 51, "max": 63, "message": "busy server"},
+      {"min": 64, "max": 64, "message": "Server is full"}
+    ]
+  },
+  "rules": [
+    "Example Rules",
+    "No alt guilds: \n  - No Fobs \n  - All characters must be in the same guild",
+    "Griefing: \n  - No Mine spamming  \n  - No Greifing in any way you as a player can think of.",
+    "No glitching \n  - inside houses \n  - glitching arrows through walls \n  - Perry Glitching \n  - Unknown Glitching to the network",
+    "Max characters allowed are only 2",
+    "No building on mountains, no terraforming rivers",
+    "Do Not Cry to Admin Every 5 mins \n  - suck it up if you get your ass kicked \n  - Only genuine concerns **PLEASE**",
+    "Siege \n  - Inside or outside of JH is fair game \n  - Tables Only to gain access \n  - The first table must have 4 legs touching the ground \n  - stacking tables on other objects to make a scaffold is unacceptable!  ",  
+    "No third-party software: \n  - NO Uengine, \n  - No Bandit Mod \n  - No other Random Cheating program Unknown to Vikings Network  \n  - If you are caught **You will be Banned!** "
+  ]
+}
