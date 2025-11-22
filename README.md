@@ -32,7 +32,7 @@ Description: Toggles the chatbot status for the specific channel where the comma
 i.e stops it talking in the channel
 
 /botmsg "message" "image_url"
-Description: ends a custom message and optional image (URL must be a direct link to .png, .jpg, .jpeg, or .gif format) as an embedded message in the current channel. ( this is a admin only command )
+Description: Sends a custom message and optional image (URL must be a direct link to .png, .jpg, .jpeg, or .gif format) as an embedded message in the current channel. ( this is a admin only command )
 message = Message you wish to send
 image_url = Image you wish bot to provide in the message
 
