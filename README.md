@@ -10,6 +10,35 @@ This bot can be used for multiple A2S games a Tested List below
 
 It should also work for any Steam based game.
 
+It is also capable of much more then just showing bot presence, it also has a built in chat bot which you can change the bot responses by editing the responses.json file to your needs.
+It also has Admin only commands that can be used These are listed below:
+```
+/lifxclearchannel
+Description: Deletes all messages in the current channel.
+it will delete as many as it can before rate limitation is hit by discord api
+
+/lifxcleanchannel
+Description: Deletes only bot messages in the current channel.
+
+/lifxcleanbotdiscord
+Description: Deletes all bot messages from every text channel in the server.
+
+/lifxtogglechatbot
+Description: Toggles the global chatbot status between enabled and disabled.
+i.e stops it talking
+
+/lifxtogglechannelchatbot
+Description: Toggles the chatbot status for the specific channel where the command is used.
+i.e stops it talking in the channel
+
+/botmsg "message" "image_url"
+Description: message = Message you wish to send
+             image_url = Image you wish bot to provide in the message
+
+```
+
+Description: Sends a custom message and optional image (URL must be a direct link to .png, .jpg, .jpeg, or .gif format) as an embedded message in the current channel.
+These commands enable admins to control the bot's behavior, clear messages, switch response files for different games, and send custom messages in chat channels.
 
 This Discord bot relies on A2S steam queries to show Bot Presence Example Below: 
 
