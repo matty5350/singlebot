@@ -32,8 +32,9 @@ Description: Toggles the chatbot status for the specific channel where the comma
 i.e stops it talking in the channel
 
 /botmsg "message" "image_url"
-Description: message = Message you wish to send
-             image_url = Image you wish bot to provide in the message
+Description: Sending this to any discord channel will make the bot delete your command sent and then send this as a message by the bot itself ( this is a admin only command )
+message = Message you wish to send
+image_url = Image you wish bot to provide in the message
 
 ```
 
