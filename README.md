@@ -68,7 +68,7 @@ This Discord bot relies on A2S steam queries to show Bot Presence Example Below:
    Ensure the "enabled" and "update_enabled" Variables are set to true or false dependant on your requirements.
 
 4) Ensure all other fields are filled in for this file, based on your game server.
-Please not db information  is only required for life is fuedal Guild wealth and killboard
+Please note db information  is only required for life is fuedal Guild wealth and killboard
 
 5) Amend the responses.json file which is located in route directory to your requirements
 6) On the Startup section of Ramparts hosting set the "APP PY FILE" field to bot.py
