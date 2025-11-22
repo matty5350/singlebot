@@ -1,4 +1,4 @@
-# Singlebot
+# Corevion Bot
 
 ## INTRUDUCTION
 This bot can be used for multiple A2S games a Tested List below
@@ -47,11 +47,38 @@ This Discord bot relies on A2S steam queries to show Bot Presence Example Below:
 1) Set up a Bot Application on Discord Developers
  - https://discord.com/developers/applications
 
-2) A bot hosting Requirement
+ You need this to gain a Bot ID for the setup process
+
+2) A bot Hosting Requirement
 - It is reccomended to use https://rampart.games/store/bot-hosting for hosting the bot.
   - As It is not expensive and is also Stable
 - Using Docker Image Python 3.12 (As Pictured)
 <img width="1475" height="915" alt="image" src="https://github.com/user-attachments/assets/29c98851-d1fc-428d-9590-56ce9c96d749" />
+
+
+## INSTALLATION
+1) Upload all files to your hosting
+2) inside the Bots folder, a file exists named bot.json
+ - under the variable "bot_token" place your bot token provided by Discord Developer portal here inside the ""
+3) In the same file Set the channel ids for the variables:
+   server_status
+   server_rules
+   killboard (only for life is fuedal)
+   guildwealth (only for life is fuedal)
+   Ensure the "enabled" and "update_enabled" Variables are set to true or false dependant on your requirements.
+
+4) Ensure all other fields are filled in for this file, based on your game server.
+Please not db information  is only required for life is fuedal Guild wealth and killboard
+
+5) Amend the responses.json file which is located in route directory to your requirements
+6) On the Startup section of Ramparts hosting set the "APP PY FILE" field to bot.py
+7) On the Startup section of Ramparts hosting set the "Requirements file" field to requirements.txt
+As pictured below
+<img width="1730" height="903" alt="image" src="https://github.com/user-attachments/assets/c0140415-6602-46ef-86e8-7a29542a6407" />
+8) Click Console and then click start
+- Assuming you have set up the Discord Developer permissions correctly for the app it should start up
+- ALSO FOR THE BOT TO WORK CORRECTLY YOU MUST INVITE YOUR DISCORD BOT TO YOUR DISCORD
+
 
 
 
