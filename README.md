@@ -47,4 +47,10 @@ Pre Requisites
 1) Set up a Bot Application on Discord Developers
  - https://discord.com/developers/applications
 
+2) A bot hosting Requirement
+- It is reccomended to use https://rampart.games/store/bot-hosting for hosting the bot.
+- Using Docker Image Python 3.12 (As Pictured)
+<img width="1475" height="915" alt="image" src="https://github.com/user-attachments/assets/29c98851-d1fc-428d-9590-56ce9c96d749" />
+
+
 
