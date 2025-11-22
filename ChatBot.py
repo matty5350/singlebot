@@ -113,31 +113,31 @@ class ChatBot:
 
         command = message.content.split(' ', 1)
 
-        if command[0] == '/lifxclearchannel':
+        if command[0] == '/CBclearchannel':
             await message.channel.purge()
-            logging.info(f"Cleared all messages in channel: {message.channel.name}")
+            logging.info(f"CorevionBot Cleared all messages in channel: {message.channel.name}")
 
-        elif command[0] == '/lifxcleanchannel':
+        elif command[0] == '/CBcleanchannel':
             await message.channel.purge(limit=None, check=lambda m: m.author.bot)
-            logging.info(f"Cleared bot messages in channel: {message.channel.name}")
+            logging.info(f"CorevionBot Cleared bot messages in channel: {message.channel.name}")
 
-        elif command[0] == '/lifxcleanbotdiscord':
+        elif command[0] == '/CBcleanbotdiscord':
             for channel in message.guild.text_channels:
                 await channel.purge(limit=None, check=lambda m: m.author.bot)
-            logging.info("Cleared all bot messages from the server.")
+            logging.info("CorevionBot Cleared all bot messages from the server.")
 
-        elif command[0] == '/lifxtogglechatbot':
+        elif command[0] == '/CBtogglechatbot':
             self.chatbot_enabled = not self.chatbot_enabled
             response = "I have woken up" if self.chatbot_enabled else "Preparing to sleep..."
             await message.channel.send(response)
-            logging.info(f"Chatbot status changed: {self.chatbot_enabled}")
+            logging.info(f"CorevionBot status changed: {self.chatbot_enabled}")
 
-        elif command[0] == '/lifxtogglechannelchatbot':
+        elif command[0] == '/CBtogglechannelchatbot':
             channel_status = self.channel_status.get(message.channel.id, True)
             self.channel_status[message.channel.id] = not channel_status
             response = "I am now active in this channel" if not channel_status else "I have been asked to ignore this channel"
             await message.channel.send(response)
-            logging.info(f"Channel chatbot status changed for {message.channel.name}: {self.channel_status[message.channel.id]}")
+            logging.info(f"CorevionBot Channel status changed for {message.channel.name}: {self.channel_status[message.channel.id]}")
 
         elif command[0] == '/botmsg':
             # Extract the message and optional image URL using regex
@@ -182,8 +182,8 @@ class ChatBot:
     async def change_responses_file(self, file_name):
         """Change the response file used for chatbot responses based on the selected file."""
         # Construct the file path for the selected response file
-        if file_name == "lifxmodding":
-            new_file_path = os.path.join("modding", "responses_lifxmodding.json")
+        if file_name == "CBmodding":
+            new_file_path = os.path.join("modding", "responses_CBmodding.json")
             
         elif file_name == "honeypot":
             new_file_path = os.path.join("ServerRelatedResponses", "responses_honeypot.json")
@@ -212,7 +212,7 @@ class ChatBot:
 
 # Initialize the bot
 bot = discord.Client(intents=discord.Intents.default())
-lifx_bot = ChatBot(link_channel_id=1234567890)  # Replace with your actual link channel ID
+CB_bot = ChatBot(link_channel_id=1234567890)  # Replace with your actual link channel ID
 
 @bot.event
 async def on_ready():
@@ -220,4 +220,4 @@ async def on_ready():
 
 @bot.event
 async def on_message(message):
-    await lifx_bot.handle_message(message)
+    await CB_bot.handle_message(message)
