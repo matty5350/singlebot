@@ -1,4 +1,4 @@
-# singlebot
+# Singlebot
 
 ## INTRUDUCTION
 This bot can be used for multiple A2S games a Tested List below
