@@ -13,21 +13,21 @@ It should also work for any Steam based game.
 It is also capable of much more then just showing bot presence, it also has a built in chat bot which you can change the bot responses by editing the responses.json file to your needs.
 It also has Admin only commands that can be used These are listed below:
 ```
-/lifxclearchannel
+/CBclearchannel
 Description: Deletes all messages in the current channel.
 it will delete as many as it can before rate limitation is hit by discord api
 
-/lifxcleanchannel
+/CBcleanchannel
 Description: Deletes only bot messages in the current channel.
 
-/lifxcleanbotdiscord
+/CBcleanbotdiscord
 Description: Deletes all bot messages from every text channel in the server.
 
-/lifxtogglechatbot
+/CBtogglechatbot
 Description: Toggles the global chatbot status between enabled and disabled.
 i.e stops it talking
 
-/lifxtogglechannelchatbot
+/CBtogglechannelchatbot
 Description: Toggles the chatbot status for the specific channel where the command is used.
 i.e stops it talking in the channel
 
