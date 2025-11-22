@@ -42,7 +42,7 @@ This Discord bot relies on A2S steam queries to show Bot Presence Example Below:
 
 <img width="265" height="96" alt="image" src="https://github.com/user-attachments/assets/bbf15e1e-2689-4da6-ac3d-e76d924d4703" />
 
-Pre Requisites
+## Pre Requisites
 
 1) Set up a Bot Application on Discord Developers
  - https://discord.com/developers/applications
